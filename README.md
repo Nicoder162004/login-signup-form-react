@@ -26,5 +26,5 @@ This project uses **LocalStorage** for storing user data (no backend required) a
 
 ---
 
-## 📁 Folder Structure
+
 
