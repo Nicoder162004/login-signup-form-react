@@ -25,10 +25,7 @@ const Signup = () => {
     }
 
     // Store user data in localStorage
-    localStorage.setItem(
-      "user",
-      JSON.stringify({ name, email, password })
-    );
+    localStorage.setItem("user", JSON.stringify({ name, email, password }));
 
     toast.success("Signup Successful 🎉");
     setTimeout(() => navigate("/login"), 1500);
@@ -91,7 +88,10 @@ const Signup = () => {
 
         <p className="text-center text-sm text-gray-500 mt-6">
           Already have an account?{" "}
-          <Link to="/login" className="text-indigo-600 font-medium hover:underline">
+          <Link
+            to="/login"
+            className="text-indigo-600 font-medium hover:underline"
+          >
             Login
           </Link>
         </p>
